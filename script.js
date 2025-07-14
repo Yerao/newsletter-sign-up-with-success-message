@@ -52,5 +52,12 @@ function handleSubmit(e) {
   }
 }
 
+// reset input's error when changed
+emailInput.addEventListener('input', function () {
+  if (emailInput.classList.contains('error')) {
+    emailInput.classList.remove('error');
+  }
+});
+
 form.addEventListener('submit', handleSubmit);
 dismissBtn.addEventListener('click', switchPage);

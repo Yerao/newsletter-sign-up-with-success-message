@@ -137,6 +137,7 @@ form .label {
 .email-input.error {
   border: 1px solid var(--red);
   background: hsl(4, 100%, 95%);
+  color: var(--red);
 }
 
 /* success */
