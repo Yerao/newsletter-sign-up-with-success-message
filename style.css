@@ -43,7 +43,7 @@ button {
 }
 button:hover {
   background: var(--red-gradient);
-  box-shadow: 0 8px 20px 0 var(--grey);
+  box-shadow: 0 0.5rem 1.25rem 0 var(--grey);
 }
 img {
   max-width: 100%;
@@ -62,7 +62,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
+  max-width: 23.4375rem;
   background: var(--white);
   min-height: 100vh;
 }
@@ -74,6 +74,9 @@ body {
 }
 
 /* image */
+.image-desktop-container {
+  display: none;
+}
 
 /* content texts */
 .content-texts {
@@ -125,17 +128,17 @@ form .label {
 .email-input {
   width: 100%;
   padding: 1.1rem;
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   outline: none;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
 }
 .email-input:focus {
-  border: 1px solid #000;
+  border: 0.0625rem solid #000;
 }
 .email-input.error {
-  border: 1px solid var(--red);
+  border: 0.0625rem solid var(--red);
   background: hsl(4, 100%, 95%);
   color: var(--red);
 }
@@ -161,4 +164,63 @@ form .label {
 }
 .success-text {
   line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 40.625rem) {
+  body {
+    min-height: 100vh;
+    align-items: center;
+  }
+  img {
+    max-width: unset;
+  }
+  .image-mobile-container {
+    display: none;
+  }
+  .image-desktop-container {
+    display: block;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .image-desktop {
+    height: 31.25rem;
+  }
+  #container-result {
+    display: flex;
+    flex-direction: column !important;
+    min-width: unset;
+  }
+  .container {
+    min-height: unset;
+    min-width: 50rem;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1.8rem;
+  }
+  .content {
+    margin-top: 0;
+    min-height: unset;
+    padding-inline: 3.5rem;
+  }
+  .content-texts-success {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  #container-result {
+    padding: 2rem 3.5rem;
+  }
+  .content-texts-success > div > img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .success-header {
+    font-size: 2.5rem !important;
+  }
+  .success-text {
+    font-size: 0.8rem;
+  }
+  form {
+    margin-top: 0;
+  }
 }

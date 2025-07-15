@@ -19,7 +19,7 @@ function validateEmail(email) {
 
   const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!validEmail.test(email)) {
-    return 'valid email is required!';
+    return 'Valid email is required!';
   }
 
   return '';
