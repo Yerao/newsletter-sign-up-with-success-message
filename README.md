@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Yerao/newsletter-sign-up-with-success-message)
+- Live Site URL: [live site URL](https://yerao.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
@@ -52,6 +52,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Yerao](https://www.frontendmentor.io/profile/Yerao)
+- Github - [@Yerao](https://github.com/Yerao)
